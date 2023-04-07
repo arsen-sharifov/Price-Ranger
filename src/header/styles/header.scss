@@ -10,9 +10,65 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
+    .logo {
+      color: #ff9559;
+      font-size: 32px;
+      font-weight: 700;
+      margin-right: 40px;
+    }
+    input {
+      width: 593px;
+      height: 33px;
+      margin-right: 20px;
+      background-color: COLOR.$RAISIN_BLACK;
+      color: white;
+      border: none;
+    }
+    button {
+      height: 39px;
+      width: 223px;
+      background-color: COLOR.$RAISIN_BLACK;
+      color: white;
+      border-radius: 0;
+      border: none;
+    }
   }
+
   h2 {
     color: white;
+  }
+}
+.ant-dropdown * {
+  background-color: COLOR.$RAISIN_BLACK !important;
+  color: white !important;
+}
+.ant-dropdown > * {
+  background-color: COLOR.$RAISIN_BLACK !important;
+  color: white !important;
+}
+
+.lang {
+  color: white;
+  min-width: 55px;
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.userAccount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 35px;
+  p {
+    color: white;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 700;
   }
 }

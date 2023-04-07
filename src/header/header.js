@@ -5,8 +5,48 @@ import { useState, useEffect } from "react";
 import { filterItemsByGoodsName } from "../utils/utils";
 import { getItemData } from "../reducer";
 import { Link } from "react-router-dom";
-
+import { Button, Dropdown } from "antd";
+import user from "../images/icons/user.png";
 function Header({ setFilteredData, itemList, setSearchActive }) {
+  const items = [
+    {
+      key: "1",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com"
+        >
+          1st menu item
+        </a>
+      ),
+    },
+    {
+      key: "2",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.aliyun.com"
+        >
+          2nd menu item
+        </a>
+      ),
+    },
+    {
+      key: "3",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.luohanacademy.com"
+        >
+          3rd menu item
+        </a>
+      ),
+    },
+  ];
+
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e) => {
@@ -25,15 +65,28 @@ function Header({ setFilteredData, itemList, setSearchActive }) {
     <div className="header">
       <TopHeader />
       <div className="header__wrapper">
+        <Link to="/">
+          <h1 className="logo">PRICE RANGER</h1>
+        </Link>
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
-          placeholder="Пошук товару за назвою"
+          placeholder="    Пошук товару"
         />
-        <Link to="/">
-          <h2>Головна</h2>
-        </Link>
+        <Dropdown
+          menu={{
+            items,
+          }}
+          placement="bottom"
+        >
+          <Button>Категорії</Button>
+        </Dropdown>
+        <p className="lang">укр | eng</p>
+        <div className="userAccount">
+          <img src={user} />
+          <p>Увійти</p>
+        </div>
       </div>
     </div>
   );

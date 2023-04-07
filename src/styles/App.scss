@@ -9,6 +9,7 @@ body {
 .searched-items {
   display: flex;
   max-width: 1342px;
+  margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
 }

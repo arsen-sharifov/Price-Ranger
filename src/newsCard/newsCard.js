@@ -1,6 +1,8 @@
 import { Image } from "antd";
 import { Card } from "antd";
 import React from "react";
+import news from "../images/demo-images/news.png"
+
 const { Meta } = Card;
 
 const NewsCard = ({ image, title, description }) => {
@@ -17,7 +19,7 @@ const NewsCard = ({ image, title, description }) => {
       cover={
         <Image
           alt=""
-          src={require("../images/demo-images/news.png")}
+          src={news}
           style={{ width: "320px", height: "200px" }}
         />
       }
