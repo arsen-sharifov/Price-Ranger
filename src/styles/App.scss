@@ -1,0 +1,14 @@
+@use "../constants.scss" as COLOR;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: COLOR.$RAISIN_BLACK;
+}
+
+.searched-items {
+  display: flex;
+  max-width: 1342px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

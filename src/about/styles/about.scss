@@ -1,0 +1,20 @@
+@use "../../constants.scss" as COLOR;
+
+.item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1342px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  img {
+    width: 666px;
+    height: 480px;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+  .item-wrapper__information {
+    margin-top: 40px;
+    color: white;
+  }
+}

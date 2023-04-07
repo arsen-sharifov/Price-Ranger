@@ -1,0 +1,18 @@
+@use "../../constants.scss" as COLOR;
+
+.header {
+  background-color: COLOR.$DARK_CHARCOAL;
+  width: 100%;
+  height: 110px;
+  .header__wrapper {
+    max-width: 1342px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h2 {
+    color: white;
+  }
+}
