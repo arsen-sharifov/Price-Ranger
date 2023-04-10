@@ -7,7 +7,7 @@ import Header from "./header/header";
 import React from "react";
 import { getItemData } from "./reducer";
 import "./styles/App.scss";
-
+import Footer from "./footer/footer";
 function App() {
   const [selectedItem, setSelectedItem] = useState({});
   const [isSearchActive, setSearchActive] = useState(false);
@@ -68,6 +68,7 @@ function App() {
           element={!isSearchActive && <About item={selectedItem} />}
         ></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

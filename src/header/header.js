@@ -17,7 +17,7 @@ function Header({ setFilteredData, itemList, setSearchActive }) {
           rel="noopener noreferrer"
           href="https://www.antgroup.com"
         >
-          1st menu item
+          Телефони
         </a>
       ),
     },
@@ -29,7 +29,7 @@ function Header({ setFilteredData, itemList, setSearchActive }) {
           rel="noopener noreferrer"
           href="https://www.aliyun.com"
         >
-          2nd menu item
+          Холодильники
         </a>
       ),
     },
@@ -41,7 +41,7 @@ function Header({ setFilteredData, itemList, setSearchActive }) {
           rel="noopener noreferrer"
           href="https://www.luohanacademy.com"
         >
-          3rd menu item
+          Інше
         </a>
       ),
     },

@@ -1,0 +1,8 @@
+@use "../../constants.scss" as COLOR;
+
+.footer {
+  height: 414px;
+  width: 100%;
+  margin-top: 150px;
+  background-color: COLOR.$DARK_CHARCOAL;
+}

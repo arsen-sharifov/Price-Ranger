@@ -1,7 +1,7 @@
 import { Image } from "antd";
 import { Card } from "antd";
 import React from "react";
-import news from "../images/demo-images/news.png"
+import news from "../images/demo-images/news.png";
 
 const { Meta } = Card;
 
@@ -17,11 +17,7 @@ const NewsCard = ({ image, title, description }) => {
       }}
       className="newsCard"
       cover={
-        <Image
-          alt=""
-          src={news}
-          style={{ width: "320px", height: "200px" }}
-        />
+        <Image alt="" src={news} style={{ width: "320px", height: "200px" }} />
       }
     >
       <Meta title={title} description={description} />

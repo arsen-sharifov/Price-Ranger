@@ -1,6 +1,6 @@
 import React from "react";
 
-import lightThemeIcon from '../../images/icons/light-theme-icon.png';
+import lightThemeIcon from "../../images/icons/light-theme-icon.png";
 
 import "./styles/top-header.scss";
 
